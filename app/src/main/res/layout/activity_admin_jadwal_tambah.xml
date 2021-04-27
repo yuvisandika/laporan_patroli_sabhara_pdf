@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminJadwalTambah"
+    android:background="#C1CACACA"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sptxtu1"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/sptxtu2"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/sptxtu3"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/sptxtu4"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/sptxthari"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/vt1"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/thari"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/vt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="Hari"/>
+        <Spinner
+            android:id="@+id/sp_hari"
+            android:layout_below="@id/thari"
+            android:layout_toLeftOf="@id/vt1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:hint="Hari"/>
+
+
+        <TextView
+            android:id="@+id/ttgl"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/vt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="Tanggal"/>
+        <EditText
+            android:id="@+id/txt_tgl"
+            android:layout_below="@id/ttgl"
+            android:layout_toRightOf="@id/vt1"
+            android:layout_toLeftOf="@+id/btn_tgl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:hint=""
+            android:editable="false"/>
+
+        <Button
+            android:id="@+id/btn_tgl"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/ttgl"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:backgroundTint="#ff0000"
+            android:text="Tgl"
+            android:textColor="#FFF"/>
+    </RelativeLayout>
+
+
+
+    <View
+        android:background="#000"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/txtunit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:text="Pilih Unit Yang Berpatroli :   "/>
+                    <Spinner
+                        android:id="@+id/sp_unit1"
+                        android:layout_toRightOf="@+id/txtunit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"/>
+                    <View
+                        android:id="@+id/v1"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/sp_unit1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"/>
+                    <EditText
+                        android:id="@+id/mulai1"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/sp_unit1"
+                        android:layout_toLeftOf="@id/v1"
+                        android:editable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="Mulai Dari :"/>
+                    <EditText
+                        android:id="@+id/sampai1"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/sp_unit1"
+                        android:layout_toRightOf="@id/v1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="Sampai Dengan :"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/txtunit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:text="Pilih Unit Yang Berpatroli :   "/>
+                    <Spinner
+                        android:layout_toRightOf="@id/txtunit2"
+                        android:id="@+id/sp_unit2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"/>
+                    <View
+                        android:id="@+id/v2"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/sp_unit2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"/>
+                    <EditText
+                        android:id="@+id/mulai2"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/sp_unit2"
+                        android:layout_toLeftOf="@id/v2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="Mulai Dari :"/>
+                    <EditText
+                        android:id="@+id/sampai2"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/sp_unit2"
+                        android:layout_toRightOf="@id/v2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="Sampai Dengan :"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/txtunit3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:text="Pilih Unit Yang Berpatroli :   "/>
+                    <Spinner
+                        android:id="@+id/sp_unit3"
+                        android:layout_toRightOf="@id/txtunit3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"/>
+                    <View
+                        android:id="@+id/v3"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/sp_unit3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"/>
+                    <EditText
+                        android:id="@+id/mulai3"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/sp_unit3"
+                        android:layout_toLeftOf="@id/v3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="Mulai Dari :"/>
+                    <EditText
+                        android:id="@+id/sampai3"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/sp_unit3"
+                        android:layout_toRightOf="@id/v3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="Sampai Dengan :"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/txtunit4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:text="Pilih Unit Yang Berpatroli :   "/>
+                    <Spinner
+                        android:id="@+id/sp_unit4"
+                        android:layout_toRightOf="@id/txtunit4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"/>
+                    <View
+                        android:id="@+id/v4"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/sp_unit4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"/>
+                    <EditText
+                        android:id="@+id/mulai4"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/sp_unit4"
+                        android:layout_toLeftOf="@id/v4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="Mulai Dari :"/>
+                    <EditText
+                        android:id="@+id/sampai4"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/sp_unit4"
+                        android:layout_toRightOf="@id/v4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="Sampai Dengan :"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/btn_uploadjadwal"
+            android:layout_margin="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#ff0000"
+            android:text="Tambah"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

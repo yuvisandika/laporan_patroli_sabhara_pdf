@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Unit4LaporanTambah"
+    android:orientation="vertical"
+    android:background="#ff0000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/txt_tgl"
+            android:layout_toLeftOf="@+id/btn_tgl"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/textview_border"
+            android:hint="Silahkan Pilih Tanggal"
+            android:editable="false"
+            android:backgroundTint="#fff"
+            android:textColor="#000"/>
+        <Button
+            android:id="@+id/btn_tgl"
+            android:background="@drawable/rounded"
+            android:layout_alignParentEnd="true"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:hint="Pilih Tanggal"
+            android:backgroundTint="#fff"
+            android:textColor="#000"/>
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_below="@+id/btn_tgl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#fff"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            android:text="Buat Laporan"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

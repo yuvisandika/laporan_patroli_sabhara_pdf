@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.patroli.sabhara">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AdminLaporan6"></activity>
+        <activity android:name=".AdminLaporan5" />
+        <activity android:name=".AdminLaporan4" />
+        <activity android:name=".AdminLaporan3" />
+        <activity android:name=".AdminLaporan2" />
+        <activity android:name=".AdminLaporan1" />
+        <activity android:name=".AdminLaporanMain" />
+        <activity android:name=".JadwalActivity" />
+        <activity android:name=".AdminJadwalTambah" />
+        <activity android:name=".AdminJadwal" />
+        <activity android:name=".About" />
+        <activity android:name=".Anggota6" />
+        <activity android:name=".Anggota5" />
+        <activity android:name=".Anggota4" />
+        <activity android:name=".Anggota3" />
+        <activity android:name=".Anggota2" />
+        <activity android:name=".Anggota1" />
+        <activity android:name=".AdminAnggota6Tambah" />
+        <activity android:name=".AdminAnggota6" />
+        <activity android:name=".AdminAnggota5Tambah" />
+        <activity android:name=".AdminAnggota5" />
+        <activity android:name=".AdminAnggota4Tambah" />
+        <activity android:name=".AdminAnggota4" />
+        <activity android:name=".AdminAnggota3Tambah" />
+        <activity android:name=".AdminAnggota3" />
+        <activity android:name=".AdminAnggota2Tambah" />
+        <activity android:name=".AdminAnggota2" />
+        <activity android:name=".AdminAnggota1Tambah" />
+        <activity android:name=".AdminAnggota1" />
+        <activity android:name=".AdminAnggotaMain" />
+        <activity android:name=".AnggotaMain" />
+        <activity
+            android:name=".Unit6LaporanTambah"
+            android:theme="@style/AppTheme.PopupTheme" />
+        <activity android:name=".Unit6LaporanIsi" />
+        <activity android:name=".Unit6Laporan" />
+        <activity
+            android:name=".Unit5LaporanTambah"
+            android:theme="@style/AppTheme.PopupTheme" />
+        <activity android:name=".Unit5LaporanIsi" />
+        <activity android:name=".Unit5Laporan" />
+        <activity
+            android:name=".Unit4LaporanTambah"
+            android:theme="@style/AppTheme.PopupTheme" />
+        <activity android:name=".Unit4LaporanIsi" />
+        <activity android:name=".Unit4Laporan" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- admin -->
+        <activity android:name=".AdminHome" />
+        <activity android:name=".Unit1Home" />
+        <activity android:name=".Unit1Laporan" />
+        <activity
+            android:name=".Unit1LaporanTambah"
+            android:theme="@style/AppTheme.PopupTheme" />
+        <activity android:name=".Unit1LaporanIsi" />
+        <activity android:name=".Unit2Home" />
+        <activity android:name=".Unit2Laporan" />
+        <activity
+            android:name=".Unit2LaporanTambah"
+            android:theme="@style/AppTheme.PopupTheme" />
+        <activity android:name=".Unit2LaporanIsi" />
+        <activity android:name=".Unit3Home" />
+        <activity android:name=".Unit3Laporan" />
+        <activity
+            android:name=".Unit3LaporanTambah"
+            android:theme="@style/AppTheme.PopupTheme" />
+        <activity android:name=".Unit3LaporanIsi" />
+        <activity android:name=".Unit4Home" />
+        <activity android:name=".Unit5Home" />
+        <activity android:name=".Unit6Home" />
+    </application>
+
+</manifest>

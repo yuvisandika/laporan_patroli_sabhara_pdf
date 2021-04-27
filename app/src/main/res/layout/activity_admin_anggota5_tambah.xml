@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AdminAnggota5Tambah"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Tambah Unit 5"/>
+    <ImageView
+        android:id="@+id/imgunitadd"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_imgadd"/>
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:background="@drawable/rounded"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Anggota"/>
+
+    <EditText
+        android:id="@+id/et_jabatan"
+        android:background="@drawable/rounded"
+        android:paddingLeft="20dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jabatan"/>
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_gravity=""
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#ff0000"
+        android:text="Tambah"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+</LinearLayout>
